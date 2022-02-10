@@ -98,7 +98,7 @@ class GameFragment : Fragment() {
                         binding.invalidateAll()
                     } else {
                         //view.findNavController().navigate(R.id.action_gameFragment_to_gameWonFragment)
-                        view.findNavController().navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment(numQuestions,questionIndex))
+                        view.findNavController().navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment(numQuestions, questionIndex))
 
                     }
                 } else {

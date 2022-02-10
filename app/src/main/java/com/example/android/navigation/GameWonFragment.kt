@@ -32,7 +32,7 @@ class GameWonFragment : Fragment() {
         // Inflate the layout for this fragment
         val binding: FragmentGameWonBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_game_won, container, false)
-        binding.nextMatchButton.setOnClickListener{ view:View->
+        binding.nextMatchButton.setOnClickListener { view: View ->
             view.findNavController().navigate(GameWonFragmentDirections.actionGameWonFragmentToGameFragment())
 
         }
@@ -53,8 +53,9 @@ class GameWonFragment : Fragment() {
 
         }
     }
+
     // Creating our Share Intent
-    private fun getShareIntent() : Intent {
+    private fun getShareIntent(): Intent {
         val args = arguments?.let { GameWonFragmentArgs.fromBundle(it) }
         val shareIntent = Intent(Intent.ACTION_SEND)
         shareIntent.setType("text/plain")
